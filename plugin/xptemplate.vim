@@ -2154,7 +2154,7 @@ fun! s:UpdateMarksAccordingToLeaderChanges(renderContext)
 	return rc
 endfunction
 fun! s:XPTupdate()
-	let renderContext = b:xptemplateData.renderContext
+	let renderContext = XPTbufData().renderContext
 	if !s:IsUpdateCondition(renderContext)
 		return 0
 	endif
